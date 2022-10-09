@@ -26,6 +26,12 @@
     justify-content: center;
 }
 
+@mixin common($fl, $ai, $jc) {
+    display: $fl;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
 body{
     background-color: #000;
     color: #fff;
@@ -188,6 +194,35 @@ section.hero{
                 }
             }
            }
+        }
+    }
+}
+section.main{
+    .container{
+        .row{
+            
+            .popular{
+                margin: 200px auto 50px;
+                @include common(flex,center ,space-between );
+                h2{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 35px;
+                    line-height: 45px;                  
+                    letter-spacing: 0.3px;               
+                    color: #fff;
+                }  
+                a{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 12px;                 
+                    letter-spacing: 1.5px;                
+                    color: #FFFFFF; 
+                    opacity: 0.67;
+                    text-decoration: none;
+                } 
+            }
         }
     }
 }

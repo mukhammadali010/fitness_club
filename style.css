@@ -198,4 +198,29 @@ section.hero .container .row .col-2 .buttons .btn2 p {
   line-height: 13px;
   letter-spacing: 1px;
   color: #FFFFFF;
+}
+
+section.main .container .row .popular {
+  margin: 200px auto 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.main .container .row .popular h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+section.main .container .row .popular a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  opacity: 0.67;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
