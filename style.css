@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "title";
+}
+
+@font-face {
+  font-family: "title";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "text";
+  src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+body {
+  background-color: #000;
+  color: #fff;
+  padding: 0 120px;
+}
+
+header .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px;
+  border: 1px solid green;
+}
+header .container .row h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+header .container .row ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .row ul li {
+  padding: 25px;
+  border: 1px solid red;
+}
+header .container .row ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  opacity: 0.67;
+}
+
+section.hero .container .row {
+  display: flex;
+}
+section.hero .container .row .col-10 {
+  position: relative;
+}
+section.hero .container .row .col-10 img {
+  position: absolute;
+  top: -110px;
+  left: 35%;
+  z-index: -100;
+}
+section.hero .container .row .col-10 .side-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 329px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 45px 0;
+  border-radius: 200px;
+  padding: 0 10px;
+}
+section.hero .container .row .col-10 .side-bar .high {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: red;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+section.hero .container .row .col-10 .side-bar .new {
+  width: 46px;
+  height: 26px;
+  left: 125px;
+  top: 218px;
+  background: #25AB75;
+  border-radius: 200px;
+  padding: 0 5px;
+}
+section.hero .container .row .col-10 h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 150px;
+  line-height: 170px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+}
+section.hero .container .row .col-10 p.lorem {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  width: 600px;
+  height: 58px;
+  margin: 42px 0;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+section.hero .container .row .col-10 .buttons {
+  display: flex;
+}
+section.hero .container .row .col-10 .buttons .btn1 {
+  width: 200px;
+  height: 70px;
+  background: #25AB75;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.hero .container .row .col-10 .buttons .btn2 {
+  width: 200px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.103);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.hero .container .row .col-2 .buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+section.hero .container .row .col-2 .buttons .btn1 {
+  width: 166px;
+  height: 98px;
+  background: rgba(255, 255, 255, 0.103);
+  border-radius: 20px;
+  color: #FFE642;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 10px;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 20px auto;
+}
+section.hero .container .row .col-2 .buttons .btn1 p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+section.hero .container .row .col-2 .buttons .btn2 {
+  width: 166px;
+  height: 98px;
+  background: rgba(255, 255, 255, 0.103);
+  border-radius: 20px;
+  color: #FB1351;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 10px;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+}
+section.hero .container .row .col-2 .buttons .btn2 p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
