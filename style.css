@@ -19,12 +19,20 @@ body {
   padding: 0 120px;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  width: 100%;
+  z-index: 1;
+}
 header .container .row {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 34px;
-  border: 1px solid green;
 }
 header .container .row h1 {
   font-style: normal;
@@ -42,7 +50,6 @@ header .container .row ul {
 }
 header .container .row ul li {
   padding: 25px;
-  border: 1px solid red;
 }
 header .container .row ul li a {
   text-decoration: none;
@@ -201,7 +208,7 @@ section.hero .container .row .col-2 .buttons .btn2 p {
 }
 
 section.main .container .row .popular {
-  margin: 200px auto 50px;
+  margin: 200px 0 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -226,20 +233,200 @@ section.main .container .row .popular a {
 }
 section.main .container .row ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+section.main .container .row ul .row {
+  display: flex;
+  gap: 20px;
+}
+section.main .container .row ul li {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 section.main .container .row ul li video {
-  width: 373px;
+  width: 355px;
   height: 250px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #000000 100%);
   border-radius: 10px;
 }
-section.main .container .row ul li video .time {
+section.main .container .row ul li .time {
   position: absolute;
-  top: 30px;
-  left: 40px;
+  top: 75%;
+  right: 0;
   width: 72px;
   height: 29px;
   background: #000000;
-  color: red;
+  border-radius: 10px;
+}
+section.main .container .row ul li .time p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: 1.36667px;
+  color: #FFFFFF;
+  padding: 10px;
+}
+section.main .container .row ul li h1 {
+  position: absolute;
+  left: 20px;
+  top: 75%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 45px;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+}
+section.main .container .row ul li p.est {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  opacity: 0.67;
+  margin: 15px;
+}
+
+section.aside .container .row {
+  position: relative;
+  margin-top: 280px;
+}
+section.aside .container .row h1 {
+  width: 523px;
+  height: 480px;
+  font-family: "title";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 120px;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+}
+section.aside .container .row .yellow {
+  position: absolute;
+  top: 420px;
+  z-index: -1;
+  width: 503.36px;
+  height: 114.5px;
+  transform: rotate(-10deg);
+}
+section.aside .container .row .box {
+  position: absolute;
+  width: 890px;
+  height: 733px;
+  left: 341px;
+  top: -100px;
+  background: rgba(255, 255, 255, 0.103);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.aside .container .row .box p {
+  width: 558px;
+  height: 200px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  margin-left: 350px;
+}
+section.aside .container .row .box button {
+  width: 200px;
+  height: 70px;
+  background: #25AB75;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 50px 0;
+}
+section.aside .container .row .img1 {
+  position: absolute;
+  left: -35px;
+  top: 630px;
+}
+section.aside .container .row .img1 img {
+  width: 377px;
+  height: 377px;
+}
+section.aside .container .row .img1 h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+section.aside .container .row .img1 span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+section.aside .container .row .img2 {
+  position: absolute;
+  left: 685px;
+  top: 527px;
+}
+section.aside .container .row .img2 img {
+  width: 477px;
+  height: 477px;
+}
+section.aside .container .row .img2 h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+section.aside .container .row .img2 span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+section.aside .container .row .img3 {
+  position: absolute;
+  top: 1005px;
+  left: 345px;
+}
+section.aside .container .row .img3 img {
+  width: 337px;
+  height: 337px;
+}
+section.aside .container .row .img3 h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+section.aside .container .row .img3 span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
