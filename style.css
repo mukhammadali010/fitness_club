@@ -223,4 +223,23 @@ section.main .container .row .popular a {
   color: #FFFFFF;
   opacity: 0.67;
   text-decoration: none;
+}
+section.main .container .row ul {
+  list-style: none;
+  position: relative;
+}
+section.main .container .row ul li video {
+  width: 373px;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #000000 100%);
+  border-radius: 10px;
+}
+section.main .container .row ul li video .time {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 72px;
+  height: 29px;
+  background: #000000;
+  color: red;
 }/*# sourceMappingURL=style.css.map */
