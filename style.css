@@ -429,4 +429,49 @@ section.aside .container .row .img3 span {
   letter-spacing: 0.5px;
   color: #FFFFFF;
   opacity: 0.5;
+}
+
+section.footer .container {
+  margin-top: 70rem;
+}
+section.footer .container .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px 0;
+}
+section.footer .container .row .col-1 p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.34;
+}
+section.footer .container .row .col-2 {
+  width: 500px;
+}
+section.footer .container .row .col-2 h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.833333px;
+  color: #FFFFFF;
+}
+section.footer .container .row .col-2 span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+section.footer .container .row:last-child {
+  border-bottom: 0;
+  padding-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */
